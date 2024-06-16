@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
 	<link rel="stylesheet" href="meyawo.css">
+    <style>
+        /* Dasar CSS untuk Sticky Element */
+        .sticky {
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0; /* Jarak dari atas saat sticky */
+            padding: 10px;
+            background-color: #fff;
+            z-index: 1000; /* Agar di depan elemen lain */
+            border-bottom: 2px solid #ccc;
+            transition: all 0.3s ease-in-out; /* Transisi untuk efek smooth */
+        }
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
@@ -51,6 +64,10 @@
         </div>          
     </nav><!-- End of Page Navbar -->
 
+    <div class="sticky" style="text-align: center;">
+        <h1 style="color: crimson;">Under Development</h1>
+    </div>
+
     <!-- page header -->
     <header id="home" class="header">
         <div class="overlay"></div>
@@ -81,7 +98,7 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="yudi.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="img/yudi.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Siapa saya?</p>
@@ -97,7 +114,7 @@
                         dapat memberikan kontribusi yang signifikan untuk perusahaan Anda,
                         serta membantu perusahaan tumbuh dan berkembang bersama.         
                     </p>
-                    <a href="triyudihandoko-cv.pdf" class="btn-rounded btn btn-outline-primary mt-4" download>Download CV</a>
+                    <a href="files/triyudihandoko-cv.pdf" class="btn-rounded btn btn-outline-primary mt-4" download>Download CV</a>
                 </div>              
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -192,7 +209,7 @@
                 </div>
             </div><!-- end of row -->
             <div class="row" style="display: flex;justify-content: center;align-items: center;">
-                <a href="triyudihandoko-portfolio.pdf" class="btn-rounded btn btn-outline-primary mt-4" download>Download Portfolio</a>
+                <a href="files/triyudihandoko-portfolio.pdf" class="btn-rounded btn btn-outline-primary mt-4" download>Download Portfolio</a>
             </div>
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
@@ -440,14 +457,14 @@
     </div> <!-- end of page footer -->
 	
 	<!-- core  -->
-    <script src="jquery-3.4.1.js"></script>
-    <script src="bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 
     <!-- bootstrap 3 affix -->
-	<script src="bootstrap.affix.js"></script>
+	<script src="js/bootstrap.affix.js"></script>
 
     <!-- Meyawo js -->
-    <script src="meyawo.js"></script>
+    <script src="js/meyawo.js"></script>
 
 </body>
 </html>
